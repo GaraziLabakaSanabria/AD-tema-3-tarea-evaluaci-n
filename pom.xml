@@ -1,0 +1,17 @@
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>birt-ad</groupId>
+  <artifactId>tema3-te</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>te3</name>
+  
+  <dependencies>
+  	<!-- Source: https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+<dependency>
+    <groupId>com.mysql</groupId>
+    <artifactId>mysql-connector-j</artifactId>
+    <version>26.7.0</version>
+    <scope>compile</scope>
+</dependency>
+  </dependencies>
+</project>
