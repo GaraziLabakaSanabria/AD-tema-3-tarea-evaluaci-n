@@ -26,7 +26,7 @@ public class Main {
 				System.out.println("id del aula: " + rs.getInt("id_aula"));
 			}
 			
-			PreparedStatement ps2 = con.prepareStatement("SELECT c.id_curso, c.titulo, c.fecha, CONCAT(COUNT(m.id_curso), \"/\", a.capacidad) as \"matrículas\", a.nombre, a.edificio FROM cursos c LEFT JOIN matriculas m ON c.id_curso = m.id_curso JOIN aulas a ON a.id_aula = c.id_aula  GROUP BY c.id_curso, c.titulo, c.fecha, a.capacidad, a.nombre, a.edificio ORDER BY c.id_curso;");
+			PreparedStatement ps2 = con.prepareStatement("SELECT c.id_curso, c.titulo, c.fecha, CONCAT(COUNT(m.id_curso), \"/\", a.capacidad) as \"plazas libres\", a.nombre, a.edificio FROM cursos c LEFT JOIN matriculas m ON c.id_curso = m.id_curso JOIN aulas a ON a.id_aula = c.id_aula  GROUP BY c.id_curso, c.titulo, c.fecha, a.capacidad, a.nombre, a.edificio ORDER BY c.id_curso;");
 			ResultSet rs2 = ps2.executeQuery();
 			
 			while (rs2.next()) {
