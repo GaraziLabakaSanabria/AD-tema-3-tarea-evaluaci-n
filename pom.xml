@@ -13,5 +13,21 @@
     <version>26.7.0</version>
     <scope>compile</scope>
 </dependency>
+
+<!-- Source: https://mvnrepository.com/artifact/org.hsqldb/hsqldb -->
+<dependency>
+    <groupId>org.hsqldb</groupId>
+    <artifactId>hsqldb</artifactId>
+    <version>2.7.4</version>
+    <scope>test</scope>
+</dependency>
+
+<!-- Source: https://mvnrepository.com/artifact/org.vibur/vibur-dbcp -->
+<dependency>
+    <groupId>org.vibur</groupId>
+    <artifactId>vibur-dbcp</artifactId>
+    <version>26.0</version>
+    <scope>compile</scope>
+</dependency>
   </dependencies>
 </project>
